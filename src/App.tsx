@@ -312,11 +312,11 @@ export default function App() {
         </div>
 
         {/* Tactical Simulator Grid with commentary on sidebar */}
-        <div className="grid grid-cols-1 xl:grid-cols-12 gap-8 items-stretch">
+        <div className="grid grid-cols-1 xl:grid-cols-12 gap-6 lg:gap-8 items-start">
           <div className="xl:col-span-8">
             <LineupSimulator />
           </div>
-          <div className="xl:col-span-4 flex flex-col gap-6 justify-between">
+          <div className="xl:col-span-4 flex flex-col gap-6 justify-start">
             <LiveCommentary />
             <SoundBoard />
           </div>

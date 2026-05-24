@@ -325,7 +325,7 @@ export default function LineupSimulator() {
         </div>
 
         {/* Game and Control layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
           
           {/* Left Column: Outer Game Container */}
           <div className="lg:col-span-7 flex flex-col gap-3">
@@ -668,10 +668,10 @@ export default function LineupSimulator() {
           </div>
 
           {/* Right Column: Character Selection & Meme Upgrades */}
-          <div className="lg:col-span-5 flex flex-col justify-between self-stretch gap-6">
+          <div className="lg:col-span-5 flex flex-col justify-start gap-4">
             
             {/* Live commentary display */}
-            <div className="bg-slate-900 border border-slate-800 p-4.5 rounded-2xl relative">
+            <div className="bg-slate-900 border border-slate-800 p-4 rounded-2xl relative">
               <span className="absolute -top-3 left-4 bg-yellow-400 text-slate-950 text-3xs font-mono font-black px-2 py-0.5 rounded uppercase tracking-wider">
                 REF REPLAY SYSTEM
               </span>
@@ -681,11 +681,11 @@ export default function LineupSimulator() {
             </div>
 
             {/* Character list selector */}
-            <div className="space-y-3">
+            <div className="space-y-2">
               <span className="text-[10px] font-mono text-slate-500 font-black uppercase tracking-widest block">
                 CHOOSE SQUAD MEMBER:
               </span>
-              <div className="grid grid-cols-1 sm:grid-cols-1 gap-2">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-1 gap-2">
                 {players.map((item) => {
                   const isCur = selectedPlayer.id === item.id;
                   return (
