@@ -49,7 +49,7 @@ export default function App() {
       <div className="absolute bottom-10 left-10 w-[400px] h-[400px] bg-rose-500/5 rounded-full blur-[100px] pointer-events-none"></div>
 
       {/* Realistic Stadium Pitch Lines & Chalk Markings overlay */}
-      <div className="absolute inset-x-0 top-0 bottom-0 pointer-events-none select-none z-0 opacity-[0.05]">
+      <div className="absolute inset-x-0 top-0 bottom-0 pointer-events-none select-none z-0 opacity-[0.14]">
         {/* Pitch outer perimeter outline */}
         <div className="absolute top-[80px] bottom-[120px] left-4 sm:left-10 right-4 sm:right-10 border border-white rounded-lg"></div>
         {/* Center line */}
