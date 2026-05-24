@@ -16,7 +16,7 @@ export default function MemeCarousel() {
   };
 
   return (
-    <section id="memes" className="py-16 bg-slate-900 border-t-4 border-emerald-950 overflow-hidden relative">
+    <section id="memes" className="py-16 bg-emerald-950/10 border-t-4 border-emerald-950/65 overflow-hidden relative">
       {/* Absolute soccer background elements */}
       <div className="absolute top-10 left-10 opacity-5 pointer-events-none text-9xl">🥅</div>
       <div className="absolute bottom-10 right-10 opacity-5 pointer-events-none text-9xl">🏃</div>

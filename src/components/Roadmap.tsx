@@ -13,7 +13,7 @@ export default function Roadmap() {
   };
 
   return (
-    <section id="roadmap" className="py-20 bg-slate-900 border-t-4 border-slate-950 px-4 relative">
+    <section id="roadmap" className="py-20 bg-emerald-950/10 border-t-4 border-emerald-950/60 px-4 relative">
       {/* Background decoration */}
       <div className="absolute top-10 right-10 opacity-[0.02] text-9xl pointer-events-none select-none">🥅</div>
       <div className="absolute bottom-10 left-10 opacity-[0.02] text-9xl pointer-events-none select-none">🏆</div>

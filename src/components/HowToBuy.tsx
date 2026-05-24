@@ -47,7 +47,7 @@ export default function HowToBuy() {
   ];
 
   return (
-    <section id="buy" className="py-20 bg-slate-950 soccer-pitch relative overflow-hidden">
+    <section id="buy" className="py-20 bg-transparent relative overflow-hidden">
       {/* Visual background lines */}
       <div className="absolute top-20 right-0 opacity-10 pointer-events-none select-none text-9xl">⚽</div>
       <div className="absolute bottom-20 left-0 opacity-10 pointer-events-none select-none text-9xl text-emerald-500">🏆</div>

@@ -42,14 +42,36 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-950 text-white font-sans selection:bg-emerald-500 selection:text-slate-950 overflow-hidden">
+    <div className="min-h-screen soccer-pitch text-white font-sans selection:bg-emerald-500 selection:text-slate-950 overflow-hidden">
       {/* Absolute Background Accent Glows */}
       <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-emerald-500/10 rounded-full blur-[120px] pointer-events-none"></div>
       <div className="absolute top-1/3 right-1/4 w-[600px] h-[600px] bg-yellow-500/5 rounded-full blur-[140px] pointer-events-none"></div>
       <div className="absolute bottom-10 left-10 w-[400px] h-[400px] bg-rose-500/5 rounded-full blur-[100px] pointer-events-none"></div>
 
+      {/* Realistic Stadium Pitch Lines & Chalk Markings overlay */}
+      <div className="absolute inset-x-0 top-0 bottom-0 pointer-events-none select-none z-0 opacity-[0.05]">
+        {/* Pitch outer perimeter outline */}
+        <div className="absolute top-[80px] bottom-[120px] left-4 sm:left-10 right-4 sm:right-10 border border-white rounded-lg"></div>
+        {/* Center line */}
+        <div className="absolute top-1/2 left-4 sm:left-10 right-4 sm:right-10 h-px bg-white -translate-y-1/2"></div>
+        {/* Center circle */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 sm:w-80 aspect-square rounded-full border border-white"></div>
+        {/* Center spot */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3.5 h-3.5 bg-white rounded-full"></div>
+        {/* Goal Box Top */}
+        <div className="absolute top-[120px] left-1/2 -translate-x-1/2 w-48 sm:w-[320px] h-16 sm:h-28 border-b border-x border-white"></div>
+        {/* Goal Box Bottom */}
+        <div className="absolute bottom-[200px] left-1/2 -translate-x-1/2 w-48 sm:w-[320px] h-16 sm:h-28 border-t border-x border-white"></div>
+        
+        {/* Corner arcs */}
+        <div className="absolute top-[80px] left-4 sm:left-10 w-6 h-6 border-b border-r border-white rounded-br-full"></div>
+        <div className="absolute top-[80px] right-4 sm:right-10 w-6 h-6 border-b border-l border-white rounded-bl-full"></div>
+        <div className="absolute bottom-[120px] left-4 sm:left-10 w-6 h-6 border-t border-r border-white rounded-tr-full"></div>
+        <div className="absolute bottom-[120px] right-4 sm:right-10 w-6 h-6 border-t border-l border-white rounded-tl-full"></div>
+      </div>
+
       {/* Top Banner / Navigation header */}
-      <header className="sticky top-0 z-40 bg-slate-950/85 backdrop-blur-md border-b-2 border-slate-900/80">
+      <header className="sticky top-0 z-40 bg-[#030e06]/90 backdrop-blur-md border-b border-emerald-950">
         <div className="max-w-7xl mx-auto px-4 py-3 sm:py-4 flex justify-between items-center">
           <div className="flex items-center gap-2 sm:gap-3 cursor-pointer" onClick={() => { playWhistle(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>
             <div className="overflow-hidden w-9 sm:w-11 h-9 sm:h-11 rounded-full border-2 border-emerald-500 shadow bg-slate-900">
@@ -226,7 +248,7 @@ export default function App() {
       </section>
 
       {/* Immersive Mobile Video Section mimicking a premium smartphone frame */}
-      <section className="py-16 bg-slate-950/40 border-y border-slate-900 overflow-hidden relative">
+      <section className="py-16 bg-emerald-950/10 border-y border-emerald-900/20 overflow-hidden relative">
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-yellow-400/5 rounded-full blur-3xl pointer-events-none"></div>
         <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none"></div>
         
@@ -339,7 +361,7 @@ export default function App() {
       <Roadmap />
 
       {/* FAQ Section */}
-      <section id="faq" className="py-20 px-4 bg-slate-950 border-t border-slate-900 relative">
+      <section id="faq" className="py-20 px-4 bg-[#030f05]/80 border-t border-emerald-950/80 relative backdrop-blur-sm">
         <div className="max-w-4xl mx-auto">
           
           <div className="text-center max-w-xl mx-auto mb-16">
@@ -393,7 +415,7 @@ export default function App() {
       </section>
 
       {/* SUI Footer signature */}
-      <footer className="bg-slate-950 border-t-2 border-slate-900/80 py-12 px-4 relative">
+      <footer className="bg-[#020a03]/95 border-t border-emerald-950/80 py-12 px-4 relative">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 items-center">
           
           <div className="lg:col-span-5 space-y-4">
