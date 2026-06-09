@@ -1,7 +1,7 @@
 import { RoadmapItem, MemeCard, SoccerFact, FaqItem } from './types';
 
-export const CONTRACT_ADDRESS = "4yBfVtYnWnrJRQhzjS3ZWzMPntCu77dDv6GY3iW4pump";
-export const TWITTER_URL = "https://x.com/WerldKupSol";
+export const CONTRACT_ADDRESS = "WLJWMrvdAVxuALyPtgfC8iZTyUYaXtb3AvPqQXfpump";
+export const TWITTER_URL = "https://x.com/werldkupsol?s=11";
 export const PUMP_URL = `https://pump.fun/coin/${CONTRACT_ADDRESS}`;
 export const DEXSCREENER_URL = `https://dexscreener.com/solana/${CONTRACT_ADDRESS}`;
 
@@ -143,7 +143,7 @@ export const FAQ_ITEMS: FaqItem[] = [
   {
     id: 2,
     q: "What is the Contract Address (ca)?",
-    a: "4yBfVtYnWnrJRQhzjS3ZWzMPntCu77dDv6GY3iW4pump - Paste this into Solflare, Phantom, or pump.fun to fill your bags before Nico passes to a pigeon."
+    a: "WLJWMrvdAVxuALyPtgfC8iZTyUYaXtb3AvPqQXfpump - Paste this into Solflare, Phantom, or pump.fun to fill your bags before Nico passes to a pigeon."
   },
   {
     id: 3,
